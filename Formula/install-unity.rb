@@ -8,7 +8,7 @@ class InstallUnity < Formula
   depends_on "mono"
 
   def install
-    system "msbuild", "-r", "-p:Configuration=Release", "-p:TargetFramework=net472", "Command/Command.csproj"
+    system "msbuild", "-r", "-p:Configuration=Release", "-p:TargetFrameworks=net472", "Command/Command.csproj"
     libexec.install Dir["Command/bin/Release/net472/*"]
 
     (bin/"install-unity").write <<~EOS
