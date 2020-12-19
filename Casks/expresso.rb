@@ -1,6 +1,6 @@
 cask 'expresso' do
-  version '1.0.2'
-  sha256 '24aea3db2fe1f037993c6463de996dcc4e1ac57a203f6740e0169bf97e6010a3'
+  version '1.1.0'
+  sha256 'c949baf9ab23431d80e9136808d326f97144ed4c6ef52b4e61b1aad921b14f65'
 
   conflicts_with formula: 'expresso'
 
