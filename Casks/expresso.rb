@@ -1,10 +1,10 @@
 cask 'expresso' do
-  version '1.1.0'
-  sha256 'c949baf9ab23431d80e9136808d326f97144ed4c6ef52b4e61b1aad921b14f65'
+  version '1.2.0'
+  sha256 '5456b1c638f1f67b1991e0f986bab4920903f48cc28e8fd566be14b4b01ef95a'
 
   conflicts_with formula: 'expresso'
 
-  url "https://github.com/sttz/expresso/releases/download/#{version}/expresso-#{version}.zip"
+  url "https://github.com/sttz/expresso/releases/download/#{version}/expresso-#{version}-osx64.zip"
   name 'expresso'
   homepage 'https://github.com/sttz/expresso/'
 
