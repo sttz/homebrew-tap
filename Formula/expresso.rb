@@ -1,8 +1,8 @@
 class Expresso < Formula
   desc "expresso is a command line interface to control the ExpressVPN app"
   homepage "https://github.com/sttz/expresso"
-  url "https://github.com/sttz/expresso/archive/1.2.0.tar.gz"
-  sha256 "bad26df80c208607141a792ef5ff0838ea9fa3acedacf214d26b88ba4462c14f"
+  url "https://github.com/sttz/expresso/archive/1.2.1.tar.gz"
+  sha256 "568f435593ac08aa522aeb3976a279df026ab24d681e405e4412908e315d52c1"
   head "https://github.com/sttz/expresso.git"
 
   depends_on "mono"
