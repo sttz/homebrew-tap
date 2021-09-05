@@ -1,8 +1,8 @@
 class InstallUnity < Formula
   desc "Script to install Unity 3D versions from the command-line"
   homepage "https://github.com/sttz/install-unity"
-  url "https://github.com/sttz/install-unity/archive/2.8.2.tar.gz"
-  sha256 "26ba7cb695a81eaa484c20952a244b0d13be0bf7f8688a15f2ef913cc543d9bf"
+  url "https://github.com/sttz/install-unity/archive/2.9.0.tar.gz"
+  sha256 "0267c7fe2a926d1e2db4fa8a037ca1567438a267c864a66568ca093ebb1da100"
   head "https://github.com/sttz/install-unity.git", :branch => "next"
 
   depends_on "mono"
