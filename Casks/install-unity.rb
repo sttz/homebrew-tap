@@ -1,6 +1,6 @@
 cask 'install-unity' do
-  version '2.10.0'
-  sha256 '9b5e469692c690f04ac73aec32cfeacc2e33f308f3046d4dc178c1ab68db2ed4'
+  version '2.10.1'
+  sha256 '2142f098a45bb4cd723f37f5cb79aefd8eef9727669bff418c4cc350915103ef'
 
   conflicts_with formula: 'install-unity'
 
