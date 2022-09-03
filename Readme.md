@@ -14,7 +14,7 @@
   The expresso cask binary is signed and notarized. Since it's not possible to staple the notarization ticket to command-line tools, an internet connection is required for macOS to verify the notarization.
 
   ```sh
-  brew cask install sttz/tap/expresso
+  brew install --cask sttz/tap/expresso
   ```
 
 * **install-unity** (https://github.com/sttz/install-unity)<br>
@@ -27,7 +27,7 @@
   As of install-unity version 2.7.0, the cask binary is now signed and notarized. Since it's not possible to staple the notarization ticket to command-line tools, an internet connection is required for macOS to verify the notarization.
 
   ```sh
-  brew cask install sttz/tap/install-unity
+  brew install --cask sttz/tap/install-unity
   ```
 
   ```sh
