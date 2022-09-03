@@ -1,20 +1,23 @@
 class InstallUnity < Formula
   desc "Script to install Unity 3D versions from the command-line"
   homepage "https://github.com/sttz/install-unity"
-  url "https://github.com/sttz/install-unity/archive/2.9.0.tar.gz"
-  sha256 "0267c7fe2a926d1e2db4fa8a037ca1567438a267c864a66568ca093ebb1da100"
-  head "https://github.com/sttz/install-unity.git", :branch => "next"
+  url "https://github.com/sttz/install-unity/archive/2.11.0.tar.gz"
+  sha256 "e55042a4fb2d43468f55626cd036f5b7a1aefab34dee3ae6cd1a51bce946b91b"
+  head "https://github.com/sttz/install-unity.git", branch: "next"
 
-  depends_on "mono"
+  depends_on "dotnet"
 
   def install
-    system "msbuild", "-r", "-p:Configuration=Release", "-p:TargetFrameworks=net472", "Command/Command.csproj"
-    libexec.install Dir["Command/bin/Release/net472/*"]
+    args = %W[
+      --configuration Release
+      --framework net#{Formula["dotnet"].version.major_minor}
+      --output #{libexec}
+    ]
 
-    (bin/"install-unity").write <<~EOS
-      #!/bin/bash
-      #{which "mono"} #{libexec}/Command.exe "$@"
-    EOS
+    system "dotnet", "publish", "Command/Command.csproj", *args
+
+    env = { DOTNET_ROOT: "${DOTNET_ROOT:-#{Formula["dotnet"].opt_libexec}}" }
+    (bin/"install-unity").write_env_script libexec/"Command", env
   end
 
   test do
