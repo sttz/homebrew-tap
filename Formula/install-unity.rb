@@ -10,7 +10,7 @@ class InstallUnity < Formula
   def install
     args = %W[
       --configuration Release
-      --framework net#{Formula["dotnet"].version.major_minor}
+      --framework net6
       --output #{libexec}
     ]
 
