@@ -10,7 +10,7 @@ class InstallUnity < Formula
   def install
     args = %W[
       --configuration Release
-      --framework net6
+      --framework net6.0
       --output #{libexec}
     ]
 
