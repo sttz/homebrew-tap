@@ -16,7 +16,7 @@ class InstallUnity < Formula
 
     system "dotnet", "publish", "Command/Command.csproj", *args
 
-    env = { DOTNET_ROOT: "${DOTNET_ROOT:-#{Formula["dotnet"].opt_libexec}}" }
+    env = { DOTNET_ROOT: "${DOTNET_ROOT:-#{Formula["dotnet"].opt_libexec}}", DOTNET_ROLL_FORWARD: "Major" }
     (bin/"install-unity").write_env_script libexec/"Command", env
   end
 
