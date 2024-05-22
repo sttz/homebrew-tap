@@ -1,8 +1,8 @@
 class InstallUnity < Formula
   desc "Script to install Unity 3D versions from the command-line"
   homepage "https://github.com/sttz/install-unity"
-  url "https://github.com/sttz/install-unity/archive/2.12.0.tar.gz"
-  sha256 "d076f6d4ba882709b20bfae9135e9df4adc61d6ab4945e6e22589018f2815693"
+  url "https://github.com/sttz/install-unity/archive/2.12.1.tar.gz"
+  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
   head "https://github.com/sttz/install-unity.git", branch: "next"
 
   depends_on "dotnet"
@@ -10,7 +10,7 @@ class InstallUnity < Formula
   def install
     args = %W[
       --configuration Release
-      --framework net7.0
+      --framework net8.0
       --output #{libexec}
     ]
 
