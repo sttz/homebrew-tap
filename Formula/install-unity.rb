@@ -1,8 +1,8 @@
 class InstallUnity < Formula
   desc "Script to install Unity 3D versions from the command-line"
   homepage "https://github.com/sttz/install-unity"
-  url "https://github.com/sttz/install-unity/archive/2.12.1.tar.gz"
-  sha256 "2553534fb004971df3a614a0a5a3ac788c0eead5f25ef6b74eb6a484e52913df"
+  url "https://github.com/sttz/install-unity/archive/2.13.0.tar.gz"
+  sha256 "9832bf09ae0d04ce5a9f954562fa78a4ec4ceed9a265924c51c508730225fec1"
   head "https://github.com/sttz/install-unity.git", branch: "next"
 
   depends_on "dotnet"
